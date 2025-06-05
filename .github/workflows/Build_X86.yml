@@ -101,8 +101,6 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo -E apt-get -qq update
-        sudo export LC_ALL="en_US.UTF-8"
-        sudo dpkg-reconfigure locales
         sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/yidianyipie/openwrt-list/master/depends-ubuntu-2004)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
