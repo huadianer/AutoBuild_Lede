@@ -232,8 +232,8 @@ jobs:
     - name: Delete Old Releases
       uses: dev-drprasad/delete-older-releases@master
       with:
-        repo: yidianyipie/AutoBuild_Lede
-        keep_latest: 3
+        repo: huadianer/AutoBuild_Lede
+        keep_latest: 5
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
