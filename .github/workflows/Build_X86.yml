@@ -230,7 +230,7 @@ jobs:
 
 
     - name: Delete Old Releases
-      uses: dev-drprasad/delete-older-releases@master
+      uses: huadianer/delete-older-releases@master
       with:
         repo: huadianer/AutoBuild_Lede
         keep_latest: 5
