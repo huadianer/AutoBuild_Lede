@@ -188,7 +188,7 @@ jobs:
         keep_minimum_runs: 3
 
     - name: Remove old Releases
-      uses: huadianer/delete-older-releases@v0.1.0
+      uses: huadianer/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         repo: huadianer/AutoBuild_Lede
