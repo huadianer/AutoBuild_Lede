@@ -15,9 +15,17 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           expire-in: 2days 
 
-      - name: Delete drafts
-        uses: hugo19941994/delete-draft-releases@v1.0.0
+      - uses: sgpublic/delete-release-action@v1.1
         with:
-          threshold: 5d
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # repo: '<owner>/<repoName>' # you can input a another repo here, defaults to current repo
+          release-drop: true
+          release-keep-count: 5
+          release-drop-tag: true
+          pre-release-drop: false
+          pre-release-keep-count: -1
+          pre-release-drop-tag: false
+          draft-drop: true
+          draft-drop-count: 5
+          env:
+            GITHUB_TOKEN: ${{ secrets.TOKEN }}
+   
