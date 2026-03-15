@@ -22,10 +22,10 @@ jobs:
           release-keep-count: 5
           release-drop-tag: true
           pre-release-drop: false
-          pre-release-keep-count: -1
+          pre-release-keep-count: 3
           pre-release-drop-tag: false
           draft-drop: true
           draft-drop-count: 5
           env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    
