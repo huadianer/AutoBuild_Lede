@@ -68,6 +68,16 @@ echo 'CONFIG_FIRMWARE_IN_KERNEL=y' >> target/linux/x86/config-6.6
 echo 'CONFIG_EXTRA_FIRMWARE="i915/kbl_dmc_ver1_04.bin"' >> target/linux/x86/config-6.6
 echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 
+# 添加 'i915/kbl_dmc_ver1_04.bin' 到6.12的内核
+echo 'CONFIG_FIRMWARE_IN_KERNEL=y' >> target/linux/x86/config-6.12
+echo 'CONFIG_EXTRA_FIRMWARE="i915/kbl_dmc_ver1_04.bin"' >> target/linux/x86/config-6.12
+echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.12
+
+# 添加 'i915/kbl_dmc_ver1_04.bin' 到6.18的内核
+echo 'CONFIG_FIRMWARE_IN_KERNEL=y' >> target/linux/x86/config-6.18
+echo 'CONFIG_EXTRA_FIRMWARE="i915/kbl_dmc_ver1_04.bin"' >> target/linux/x86/config-6.18
+echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.18
+
 
 # 修改libdaq版本
 
